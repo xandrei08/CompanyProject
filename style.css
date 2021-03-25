@@ -44,7 +44,7 @@ div.collapse.show {
 #section1 {
   width: 100vw;
   height: 100vh;
-  background-image: url("../project/background.jpg");
+  background-image: url("background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
