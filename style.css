@@ -1,0 +1,253 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+}
+
+nav.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 2vw 6vw;
+  width: 100%;
+  height: 8vh;
+  background-color: transparent !important;
+}
+
+a.navbar-brand,
+a.nav-link {
+  color: #fcfcfc !important;
+  font-weight: 500;
+  font-style: calc(16px + 0.1vw);
+}
+
+/* div.dropdown-menu.show {
+    background-color: 
+    transparent !important;
+} */
+
+div.collapse.show {
+  transition: all 0.6s ease;
+}
+
+div.collapse.show {
+  box-shadow: 0 3px 2px -2px rgb(255, 255, 255, 0.4);
+}
+
+#section1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../project/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section1 .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section1 .row .col-12 {
+  flex-basis: 60vw;
+}
+
+#section1 .row .col-12 #title {
+  color: #fcfcfc;
+  font-style: calc(24px + 1.5vw);
+  margin: 2vw 0;
+}
+
+#section1 .row .col-12 #description {
+  color: #fcfcfc;
+  font-size: calc(16px + 0.1vw);
+  margin: 0;
+  padding-bottom: 2vw;
+  line-height: calc(30px + 0.1vw);
+  font-weight: 400;
+}
+
+#section1 .row .col-12 button#contactUs {
+  color: #fcfcfc;
+  font-size: calc(16px + 0.05vw);
+  background-color: #b93232;
+  border: none;
+  border-radius: 40px;
+  padding: 12px 28px;
+  transition: all 0.5s ease;
+}
+
+#section1 .row .col-12 button#contactUs:hover {
+  transform: scale(1.05) skew(8deg);
+  box-shadow: 1.5px 1.5px 10px rgb(49, 49, 49);
+}
+
+#imgOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+#arrowDown {
+  position: absolute;
+  bottom: 7%;
+  right: 7%;
+  color: #fcfcfc;
+  transform: rotate(90deg);
+  font-size: calc(20px + 0.8vw);
+  animation: upAndDown 3s ease-in-out infinite;
+}
+
+#arrowDown a,
+#arrowDown a:hover {
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+#section2 {
+  height: auto;
+  width: 100vw;
+}
+
+#section2 .row:first-child {
+  height: auto;
+  width: 100%;
+  padding: 6vw 0 6vw 3vw;
+}
+
+#section2 .row:last-child {
+  padding: 0 0 6vw 0;
+}
+
+#section2 .row .col-sm-12 {
+  padding: 0;
+}
+
+.card {
+  margin: 0 auto;
+  box-shadow: 3px 3px 15px #d6d6d6;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.6s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+h3#titleCompanySection {
+  color: #121212;
+  font-size: calc(16px + 0.1vw);
+  font-weight: 500;
+  width: fit-content;
+  position: relative;
+}
+
+h3#titleCompanySection::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15%;
+  background-color: #121212;
+  height: 2.5px;
+  width: 20%;
+}
+
+h1.jobTitle {
+  color: #121212;
+}
+
+a.applyJob {
+  color: #b93232;
+  text-decoration: none;
+  font-size: calc(16px + 0.05vw);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+a.applyJob:hover {
+  margin-left: 0.5vw;
+}
+
+footer {
+  background-color: #121212;
+  padding: 4vw 0 4vw 0;
+  color: #fcfcfc;
+}
+
+input.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #fcfcfc;
+}
+
+input.form-control:focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-bottom: 1px solid #fcfcfc;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button.submitBtn {
+  border: 1px solid #fcfcfc;
+  background-color: transparent;
+  margin-left: 2vw;
+  padding: 0 16px;
+  transition: all 0.6s ease;
+}
+
+button.submitBtn:hover,
+button.submitBtn:focus,
+button.submitBtn:active {
+  background-color: #fcfcfc !important;
+  color: #121212 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+footer .row:last-child {
+  margin-top: 4vw;
+  text-align: center;
+}
+
+footer .row:last-child a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+footer .row:last-child a span {
+  color: #b93232;
+}
+
+@keyframes upAndDown {
+  0%,
+  100% {
+    bottom: 7%;
+  }
+
+  50% {
+    bottom: 5%;
+  }
+}
